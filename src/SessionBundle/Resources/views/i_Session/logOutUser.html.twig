@@ -1,0 +1,40 @@
+<div id="btnLogOut" class="animatedButton">
+        LOG OUT
+</div>
+
+<div id="infoAboutUser-sessionFrame">
+    <div id="infoAboutUser-sessionBackground">
+    </div>
+    <div id="infoAboutUser-session" class="animatedButton">
+    </div>
+</div>
+     
+<script>
+    var profileIconButton = document.getElementById('infoAboutUser-session');
+    
+    profileIconButton.addEventListener("click", show_profileIconContent, false);
+    {#profileIconButton.addEventListener("click", drawSpecificlistProfile, false);#}
+    
+    function show_profileIconContent()
+    {
+        drawSpecificlistProfile();
+        
+        var profileIconContent = document.getElementById('profileIconContent');
+        
+        if (profileIconContent.style.display == "none")
+        {
+            clear_options();
+            profileIconContent.style.display = "block";
+        } else
+        {
+            profileIconContent.style.display = "none";
+        }
+    }
+    
+    function hide_profileIconContent()
+    {
+        var profileIconContent = document.getElementById('profileIconContent');
+        clear_options();
+        profileIconContent.style.display = "none";
+    }
+</script>

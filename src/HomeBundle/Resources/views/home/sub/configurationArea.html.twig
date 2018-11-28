@@ -1,0 +1,68 @@
+<style>
+    #configurationArea_1 {
+        z-index: 1;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 250px;
+        position: absolute;
+    }
+    
+    #configurationArea_1BgColor {
+        z-index: 1;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 250px;
+        background-color: gray;
+        opacity: 0.2;
+        position: absolute;
+    }
+    
+    #configurationArea_1Content {
+    }
+    
+    #configurationArea_2 {
+        z-index: 1;
+        top: 0px;
+        bottom: 0px;
+        left: 250px;
+        width: 450px;
+        position: absolute;
+    }
+    
+    #configurationArea_2BgColor {
+        z-index: 1;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: gray;
+        opacity: 0.2;
+        position: absolute;
+    }
+    
+    #configurationArea_2Content {
+    }
+</style>
+
+
+<div id="configurationArea_1">
+    <div id="configurationArea_1BgColor">
+    </div>
+    <div id="configurationArea_1Content">
+        {{ include('@Home/home/sub/iconExplanation/song.html.twig') }}
+        {{ include('@Home/home/sub/iconExplanation/artist.html.twig') }}
+    </div>
+</div>
+
+
+<div id="configurationArea_2">
+    <div id="configurationArea_2BgColor">
+    </div>
+    <div id="configurationArea_2Content">
+        {{ include('@Home/home/sub/iconExplanation/profile.html.twig') }}
+        {{ include('@Home/home/sub/iconExplanation/uploadVideo.html.twig') }}
+        {{ include('@Home/home/sub/iconExplanation/editLyrics.html.twig') }}
+    </div>
+</div>
